@@ -19,7 +19,7 @@ export async function ListOfPosts() {
         <div className="posts-container__card">
           <Image
             className="post-container__card-img"
-            src="/../public/post1.png"
+            src="https://bluemountains88-blogster-bucket.s3.amazonaws.com/post1.png"
             width="200"
             height="200"
             alt="post image"

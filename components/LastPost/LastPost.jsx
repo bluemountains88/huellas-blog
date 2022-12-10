@@ -8,7 +8,7 @@ export default function LastPost() {
     <div className={styles.card}>
       <div className={styles.card__image}>
         <Image
-          src="/../public/post1.png"
+          src="https://bluemountains88-blogster-bucket.s3.amazonaws.com/post1.png"
           width="512"
           height="512"
           alt="isaias 61:4"
