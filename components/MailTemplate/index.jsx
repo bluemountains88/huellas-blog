@@ -10,7 +10,7 @@ export default function Template() {
         Gracias por suscribirte a nuestras novedades
       </h2>
       <h3 style={{ 'text-align': 'center', padding: 30 }}>
-        Te recomendamos nuestro ultimo post:{' '}
+        Te recomendamos nuestro ultimo post:
         <a href="https://www.somoshuella.com.ar/posts/1">
           Otra historia de familia
         </a>
