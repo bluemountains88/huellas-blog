@@ -18,7 +18,7 @@ export default async function Post({ params, children }) {
       <h2 className="single-post__title">Otra historia de familia</h2>
       <div className="single-post__body">
         <Image
-          src="/../public/post1.png"
+          src="https://bluemountains88-blogster-bucket.s3.amazonaws.com/post1.png"
           height="380"
           width="380"
           alt="isaias 61:4"

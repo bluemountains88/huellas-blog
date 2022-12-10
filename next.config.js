@@ -4,7 +4,10 @@ const nextConfig = {
     appDir: true,
   },
   images: {
-    domains: ['lh3.googleusercontent.com'],
+    domains: [
+      'lh3.googleusercontent.com',
+      'bluemountains88-blogster-bucket.s3.amazonaws.com',
+    ],
   },
   eslint: {
     ignoreDuringBuilds: true,
