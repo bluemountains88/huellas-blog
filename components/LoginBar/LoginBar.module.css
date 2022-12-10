@@ -1,0 +1,13 @@
+.bar {
+  color: black;
+}
+
+.bar > img {
+  border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+  .bar > a > svg {
+    filter: invert(100%);
+  }
+}

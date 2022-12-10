@@ -1,0 +1,26 @@
+.single-post {
+  background: white;
+  color: black;
+}
+
+.single-post__body {
+  padding: 5px;
+}
+
+.single-post__title {
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+.single-post__body > img {
+  float: left;
+  margin: 0 5px 0 0;
+}
+
+@media (max-width: 600px) {
+  .single-post__body > img {
+    float: none;
+    display: block;
+    margin: auto;
+  }
+}

@@ -1,0 +1,29 @@
+.posts-container {
+  display: flex;
+  background: white;
+  margin: 5px 0;
+}
+
+.posts-container__card {
+  margin: 5px;
+  border: 1px solid rgba(249, 105, 14, 0.8);
+}
+
+.posts-container__card-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.posts-container__card-button {
+  display: block;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  border: none;
+  background: rgba(249, 105, 14, 0.8);
+  height: 40px;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}

@@ -1,0 +1,52 @@
+.card {
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.card__image {
+  flex: 4;
+  padding: 10px;
+  margin: auto;
+}
+
+.card__paragraph {
+  flex: 6;
+}
+
+.card__image > img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card__paragraph > h2 {
+  text-align: center;
+}
+
+.card__paragraph > p {
+  font-size: 1.1rem;
+}
+
+.card__paragraph > a > small {
+  display: block;
+  padding: 5px;
+  text-align: right;
+}
+
+@media (max-width: 600px) {
+  .card {
+    flex-direction: column;
+  }
+
+  .card__image > img {
+    width: 440px;
+    height: 440px;
+  }
+
+  .card__paragraph {
+    margin: auto;
+    padding: 0 0 10px 10px;
+  }
+}
