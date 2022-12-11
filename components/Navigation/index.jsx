@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import LoginBar from '../LoginBar';
 import './navigation.css';
@@ -42,7 +43,7 @@ export default function Navigation() {
         {links.map((link) => {
           return (
             <Link key={link.route} href={link.route}>
-              {link.label}
+              <div className="responsive_item">{link.label}</div>
             </Link>
           );
         })}

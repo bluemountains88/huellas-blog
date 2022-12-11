@@ -1,4 +1,5 @@
 .bar {
+  display: flex;
   color: black;
 }
 
@@ -6,18 +7,11 @@
   border-radius: 50%;
 }
 
-.button {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-.button:hover {
-  background: orange;
-}
-
 @media (max-width: 600px) {
-  .bar > button > svg {
+  .bar > a {
+    color: white;
+  }
+  .bar > svg {
     filter: invert(100%);
   }
 }

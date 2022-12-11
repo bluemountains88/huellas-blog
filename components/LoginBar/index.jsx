@@ -1,6 +1,6 @@
 import { useUser } from '@auth0/nextjs-auth0';
-import Image from 'next/image';
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from './LoginBar.module.css';
 
 const links = [
@@ -40,13 +40,19 @@ const LoginBar = () => {
           height="40"
           alt="profile picture"
         />
-        <Link href={links[0].route}>{links[0].label}</Link>
+        {links[0].icon}
+        <Link href={links[0].route} passHref>
+          <a target="_blank">{links[0].label}</a>
+        </Link>
       </div>
     );
   }
   return (
     <div className={styles.bar}>
-      <Link href={links[1].route}>{links[1].label}</Link>
+      {links[1].icon}
+      <Link href={links[1].route} passHref>
+        <a target="_blank">{links[1].label}</a>
+      </Link>
     </div>
   );
 };

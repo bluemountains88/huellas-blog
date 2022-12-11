@@ -46,6 +46,17 @@
 .nav > .nav_check {
   display: none;
 }
+.responsive_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.responsive_item > svg {
+  width: 10px;
+  margin: 0 auto;
+}
 
 @media (max-width: 600px) {
   .nav > .nav_btn {
@@ -86,11 +97,15 @@
     width: 100%;
     color: white;
   }
+
   .nav > #nav-check:not(:checked) ~ .nav_links {
     height: 0px;
   }
   .nav > #nav-check:checked ~ .nav_links {
     height: calc(100vh - 50px);
     overflow-y: auto;
+  }
+  .responsive_item > svg {
+    filter: invert(100%);
   }
 }
