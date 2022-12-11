@@ -9,6 +9,9 @@ const nextConfig = {
       'bluemountains88-blogster-bucket.s3.amazonaws.com',
     ],
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
 
 module.exports = nextConfig;
