@@ -41,8 +41,8 @@ const LoginBar = () => {
           alt="profile picture"
         />
         {links[0].icon}
-        <Link href={links[0].route} passHref={true}>
-          {links[0].label}
+        <Link href={links[0].route} passHref>
+          <a target="_blank">{links[0].label}</a>
         </Link>
       </div>
     );
@@ -50,8 +50,8 @@ const LoginBar = () => {
   return (
     <div className={styles.bar}>
       {links[1].icon}
-      <Link href={links[1].route} passHref={true}>
-        {links[1].label}
+      <Link href={links[1].route} passHref>
+        <a target="_blank">{links[1].label}</a>
       </Link>
     </div>
   );
