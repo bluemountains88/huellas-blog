@@ -6,8 +6,18 @@
   border-radius: 50%;
 }
 
+.button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: orange;
+}
+
 @media (max-width: 600px) {
-  .bar > a > svg {
+  .bar > button > svg {
     filter: invert(100%);
   }
 }
