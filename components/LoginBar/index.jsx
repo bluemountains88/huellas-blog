@@ -1,5 +1,5 @@
-/*ignore eslint*/
 import { useUser } from '@auth0/nextjs-auth0';
+import Link from 'next/link';
 import Image from 'next/image';
 import styles from './LoginBar.module.css';
 
@@ -40,13 +40,19 @@ const LoginBar = () => {
           height="40"
           alt="profile picture"
         />
-        <a href={links[0].route}>{links[0].label}</a>
+        {links[0].icon}
+        <Link href={links[0].route} passHref={true}>
+          {links[0].label}
+        </Link>
       </div>
     );
   }
   return (
     <div className={styles.bar}>
-      <a href={links[1].route}>{links[1].label}</a>
+      {links[1].icon}
+      <Link href={links[1].route} passHref={true}>
+        {links[1].label}
+      </Link>
     </div>
   );
 };
