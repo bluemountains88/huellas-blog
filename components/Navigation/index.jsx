@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import LoginBar from '../LoginBar';
+//import LoginBar from '../LoginBar';
 import './navigation.css';
 
 const links = [
@@ -47,7 +47,6 @@ export default function Navigation() {
             </Link>
           );
         })}
-        <LoginBar />
       </div>
     </div>
   );
